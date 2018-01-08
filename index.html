@@ -10,7 +10,7 @@ background-color: black
 </style>
 <script>
 var a = 0;
-var l = "function getCode() {~$.get('site1',function(data){console.log('data');});~}";
+var l = "function getCode() {~$.get('site1',function(data){return data;});~}~var a = getCode('google.com'); ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
 function go() {
 if (l[a]==="~") {
 document.getElementById('p').innerHTML+="<br/>"; 
