@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FakeCode</title>
+<style>
+body {
+color: lightgreen;
+background-color: black
+}
+</style>
+<script>
+var a = 0;
+var l = [];
+function go() {
+if (l[a]==="~") {
+document.getElementById('p').textContent+="/n"; 
+} else {
+document.getElementById('p').textContent+=l[a]; 
+}
+a++;
+}
+</script>
+</head>
+<body onkeypress="go();">
+<p id="p"></p>
+
+</body>
+</html>
