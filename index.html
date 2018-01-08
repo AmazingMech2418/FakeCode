@@ -13,9 +13,9 @@ var a = 0;
 var l = "function getCode() {~$.get('site1',function(data){console.log('data');});~}";
 function go() {
 if (l[a]==="~") {
-document.getElementById('p').textContent+=eval("\r\n"); 
+document.getElementById('p').innerHTML+="<br/>"; 
 } else {
-document.getElementById('p').textContent+=l[a]; 
+document.getElementById('p').innerHTML+=l[a]; 
 }
 a++;
 }
