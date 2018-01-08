@@ -13,7 +13,7 @@ var a = 0;
 var l = "function getCode() {~$.get('site1',function(data){console.log('data');});~}";
 function go() {
 if (l[a]==="~") {
-document.getElementById('p').textContent+="/n"; 
+document.getElementById('p').textContent+="\n"; 
 } else {
 document.getElementById('p').textContent+=l[a]; 
 }
